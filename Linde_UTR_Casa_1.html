@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Linde - Vinculando tu independencia</title><!-- -->
+	<link rel="stylesheet" type="text/css" href="Linde_Página_Principal.css">
+	<link rel="stylesheet" type="text/css" href="Linde_Zona_UTR.css">
+	<link rel="icon" type="image/gif" sizes="16x16" href="Images/icono.png">
+	<!-- Responsive code -->
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<!-- Apis to use Bootstrap -->
+ 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  	<!-- Font awesome -->
+  	<link rel="stylesheet"  href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  	<link href="https://fonts.googleapis.com/css?family=Anton|Oswald" rel="stylesheet">
+</head>
+<body>
+	<!-- Top nav code -->
+	<nav class="navbar navbar-inverse navbar-fixed-top" style="font-family: 'Anton', sans-serif; font-size: 20px;">
+		<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+       			<span class="icon-bar"></span>
+        		<span class="icon-bar"></span>
+        		<span class="icon-bar"></span>                        
+      		</button>
+			<a class="navbar-brand" style="color: #FE9B02;" href="index.html">LINDE</a>
+		</div>
+		<div class="collapse navbar-collapse" id="myNavbar">
+		<ul class="nav navbar-nav">
+		</ul>
+		<ul class="nav navbar-nav navbar-right">
+			<li id="nav" data-target="#signup"><a data-toggle="modal" id="navLetter" href="#myModal"><i class="fa fa-user-o"></i> Iniciar Sesión</a>
+			<li id="nav" data-target="#signup"><a data-toggle="modal" id="navLetter" href="#registro"><i class="fa fa-user-plus"></i> Registrarse</a>
+			</li>	
+		</ul>
+		</div>
+	    </div>
+	</nav>
+
+	<!-- Iniciar Sesión -->
+    <div class="modal fade" id="myModal" role="dialog">
+    	<div class="modal-dialog">
+    
+      	<!-- Contenido-->
+      	<div class="modal-content" style="background-color: #FE9B02; font-family: 'Anton', sans-serif;">
+        	<div class="modal-header">
+          		<button type="button" class="close" data-dismiss="modal">&times;</button>
+          		<h4 class="modal-title">Iniciar Sesión</h4>
+        	</div>
+        	<div class="modal-body">
+        		<center>
+          		<form>
+          			<input type="email" name="email" placeholder="Correo Institucional (xxxx@utr.edu.mx)." required="" style="width: 90%; height: 40px; margin-bottom: 10px; text-align: center;">
+          			<input type="password" name="password" placeholder="Contraseña" required="" style="width: 90%; height: 40px; margin-bottom: 10px; text-align: center;">
+          			<input type="submit" name="submit" value="Iniciar Sesión" style="width: 30%; height: 30px; margin-bottom: 10px;">
+          		</form>
+          		</center>
+        	</div>
+       		<div class="modal-footer">
+          		<button type="button" class="btn btn-default" data-dismiss="modal">Volver</button>
+        	</div>
+        </div>
+      
+        </div>
+    </div>
+
+    <!-- Registrarse -->
+    <div class="modal fade" id="registro" role="dialog">
+    	<div class="modal-dialog">
+    
+      	<!-- Contenido-->
+      	<div class="modal-content" style="background-color: #FE9B02; font-family: 'Anton', sans-serif;">
+        	<div class="modal-header">
+          		<button type="button" class="close" data-dismiss="modal">&times;</button>
+          		<h4 class="modal-title">Registro</h4>
+        	</div>
+        	<div class="modal-body">
+        		<center>
+          		<form>
+          			<input type="text" name="name" placeholder="Nombre" required="" style="width: 90%; height: 40px; margin-bottom: 10px; text-align: center;">
+          			<h4>Selecciona a la universidad que perteneces:</h4>
+          			<select style="width: 90%; height: 40px; margin-bottom: 10px; text-align: center;" required="">
+          				<option>Universidad Tecnológica El Retoño</option>
+          				<option>Universidad Tecnológica de Aguascalientes</option>
+          				<option>Universidad Tecnológica de Calvillo</option>
+          				<option>Universidad Politécnia de Aguascalientes</option>
+          			</select>
+          			<input type="email" name="email" placeholder="Correo Institucional (xxxx@utr.edu.mx)." required="" style="width: 90%; height: 40px; margin-bottom: 10px; text-align: center;">
+          			<input type="password" name="password" placeholder="Contraseña" required="" style="width: 90%; height: 40px; margin-bottom: 10px; text-align: center;">
+          			<p>Al hacer clic en "Registrarse", aceptas las <a href="#">Condiciones</a> y confirmas que leíste nuestra <a href="#">Política de datos</a>, incluido el uso de cookies.</p>
+          			<input type="submit" name="submit" value="Registrarse" style="width: 30%; height: 30px; margin-bottom: 10px;">
+          		</form>
+          		</center>
+        	</div>
+       		<div class="modal-footer">
+          		<button type="button" class="btn btn-default" data-dismiss="modal">Volver</button>
+        	</div>
+        </div>
+      
+        </div>
+    </div>
+
+    <div class="container-fluid" style="margin-top: 10px; font-family: 'Anton', sans-serif; margin-top: 100px;">
+			<div id="myCarousel" class="carousel slide" data-ride="carousel" style="font-family: 'Oswald', sans-serif;
+	font-size: 20px; width: 80%; margin-left: 10%; height: 500px;">
+				<div class="carousel-inner">
+			    	<div class="item active">
+				    	<img src="Images/house_1.jpg" style="width: 80%; height: 500px; margin-left: 10%;">
+				    	<div class="carousel-caption" style="">
+				        	<h3>Fachada de la casa</h3>
+				        	<p>En una zona muy tranquila y segura.</p>
+			        	</div>
+			    	</div>
+			    	<div class="item">
+				    	<img src="Images/house_1_2.jpg" style="width: 80%; height: 500px; margin-left: 10%;">
+				    	<div class="carousel-caption">
+					    	<h3>Cocina equipada</h3>
+				    	</div>
+			    	</div>
+			    	<div class="item">
+				    	<img src="Images/house_1_3.jpg" style="width: 80%; height: 500px; margin-left: 10%;">
+				    	<div class="carousel-caption">
+					    	<h3>Habitaciones grandes</h3>
+					    	<p>Hbitaciones con armario incluido.</p>
+				    	</div>
+			    	</div>
+				</div>
+
+				<a href="#myCarousel" class="left carousel-control" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left"></span>
+					<span class="sr-only">Previuos</span>
+				</a>
+				<a href="#myCarousel" class="right carousel-control" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right"></span>
+					<span class="sr-only">Next</span>
+				</a>
+	    	</div>
+		</div>
+
+		<div class="container-fluid" style="margin-top: 50px;">
+			<div class="col-sm-6" style="font-family: 'Oswald', sans-serif; font-size: 20px;">
+				<h1 style="font-family: 'Anton', sans-serif; font-size: 50px;">Descripción</h1>
+	            <h3>
+					
+				</h3>
+				<dl>
+					<dt>
+						Descripción de la casa:
+					</dt><br>
+					<dd>
+						"Simplemente una casa con un toque de libertad".
+					</dd><br>
+					<dd>
+						La ubicación de la casa está a 5 minutos de donde puedes tomar el transporte para la universidad y a 10 minutos en camión de la Universidad Tecnológica El Retoño. La cas cuenta con dos plantas, cochera, patio y cuarto de lavado.
+					</dd><br>
+					<dt>
+						Habitaciones
+					</dt>
+					<dd>
+						Cuenta con habitaciones grandes y bien iluminadas. Tiene una habitación principal y dos habitaciones para visitantes, todas las habitaciones cuentan con armario.
+					</dd><br>
+					<dt>
+						Cocina/ Comedor
+					</dt>
+					<dd>
+						Cuenta con una cocina amplia y equipada, además de comedor para 6 personas.
+					</dd><br>
+					<dt>
+						Lugares en la casa:
+					</dt>
+					<dd>
+						Cuenta con una sala muy amplia e iluminada, perfecta para una tarde de convivencia con amigos y familia que te visita. 
+					</dd>
+					<dd>
+						En la planta de arriba hay una sala de estar, perfecta para estudiar, leer o relajarse.
+					</dd>
+				</dl>
+			</div>
+			<div class="col-sm-6">
+				<h1 style="font-family: 'Anton', sans-serif; font-size: 50px;">Detalles</h1>
+				<table class="table table-hover">
+					<thead>
+						<tr>
+							<th>
+								Habitaciones Extra
+							</th>
+							<th>
+								Si
+							</th>
+							<th>
+								No
+							</th>
+							<th>
+								Detalles
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								Cocina
+							</td>
+							<td>
+								Sí
+							</td>
+							<td>
+								-
+							</td>
+							<td>
+								-
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Comedor
+							</td>
+							<td>
+								Sí
+							</td>
+							<td>
+								-
+							</td>
+							<td>
+								-
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Sala
+							</td>
+							<td>
+								Sí
+							</td>
+							<td>
+								-
+							</td>
+							<td>
+								-
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Patio
+							</td>
+							<td>
+								Sí
+							</td>
+							<td>
+								-
+							</td>
+							<td>
+								-
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Cochera
+							</td>
+							<td>
+								Sí
+							</td>
+							<td>
+								-
+							</td>
+							<td>
+								-
+							</td>
+						</tr>						
+					</tbody>
+				</table>
+				<table class="table table-hover">
+					<thead>
+						<tr>
+							<th>
+								Servicios
+							</th>
+							<th>
+								Sí
+							</th>
+							<th>
+								No
+							</th>
+							<th>
+								Extra
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								Internet
+							</td>
+							<td>
+								Sí
+							</td>
+							<td>
+								-
+							</td>
+							<td>
+								-
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Cable TV
+							</td>
+							<td>
+								Sí
+							</td>
+							<td>
+								-
+							</td>
+							<td>
+								Sólo para canales abiertos.
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Limpieza
+							</td>
+							<td>
+								Sí
+							</td>
+							<td>
+								-
+							</td>
+							<td>
+								Contacte al dueño.
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+	<div class="container-fluid">
+		<div class="col-sm-4" style="font-family: 'Oswald', sans-serif; font-size: 20px;">
+			<h2 style="font-family: 'Anton', sans-serif; font-size: 30px;">PAQUETE 1</h2>
+			<p>Incluye una habitación con baño, cocina y comedor compartidos con otros estudiantes. Todo esto por $1270 por mes.</p>
+			<button style="width: 20%; height: 50px; margin-left: 40%;">RENTAR</button>
+		</div>	
+		<div class="col-sm-4" style="font-family: 'Oswald', sans-serif; font-size: 20px;">
+			<h2 style="font-family: 'Anton', sans-serif; font-size: 30px;">PAQUETE 2</h2>
+			<p>Incluye el uso de toda la casa a tu disposición. Todo esto por $3800 por mes.</p>
+			<button style="width: 20%; height: 50px; margin-left: 40%;">RENTAR</button>
+		</div>
+	</div>	
+
+    <!-- Sección de Publicidad -->
+	<div class="container-fluid" style="margin-top: 100px; font-family: 'Anton', sans-serif; font-size: 22px; text-align: center; background-color: #222; padding: 10px; color: #FE9B02;">
+		<div class="col-sm-4">
+			<address>
+				 Linde, Inc.<br> Bella Vista 122, Atardecer 101<br> Aguascalientes, Ags 20288<br> <abbr title="Telefono">T:</abbr> (449) 142-0902
+			</address>
+		</div>
+		<div class="col-sm-4">
+			<h3>Encuntranos en las redes sociales</h3>
+			<center>
+			<ul class="list-inline">
+                <li class="list-inline-item">
+                  <a class="btn-social btn-outline" href="#">
+                    <i class="fa fa-fw fa-facebook fa-3x" id="socialNet"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-social btn-outline" href="#">
+                    <i class="fa fa-fw fa-twitter fa-3x" id="socialNet"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-social btn-outline" href="#">
+                    <i class="fa fa-fw fa-instagram fa-3x" id="socialNet"></i>
+                  </a>
+                </li>
+             </ul>
+             </center>
+		</div>
+		<div class="col-sm-4">
+			<blockquote class="blockquote-reverse" style="font-size: 25px; margin-top: 25px;">
+				<p>"Vinculando tu independencia"</p>
+				<footer>Diana Nieves Co-Fundadora LINDE</footer>
+			</blockquote>
+		</div>
+	</div>
+
+</body>
+</html>

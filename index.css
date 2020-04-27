@@ -1,0 +1,59 @@
+/* */
+
+/* La acción de este ID es para cuando estes sobre el boton del menu cambie de color de fondo */
+#nav:hover{
+	background-color: #5D6D7E;
+}
+
+/* La acción de este ID es para cuando estes sobre el boton del menu cambie de color de la letra */
+#navLetter{
+	color: #FE9B02;
+}
+#navLetter:hover{
+	color: white;
+}
+
+/* La acción de esta CLASS es para darle medidas al contenedor que tendrá las imagenes de los aliados */
+.iconOne {
+
+	width: 22.5%;
+	height: 200px;
+	margin-left: 2%;
+	margin-bottom: 50px;
+    float: left;
+
+}
+
+/* La acción de este ID es para regular las medidas de la imagen dentro de la sección de ALIADOS */
+#imgSize {
+
+	width: 80%;
+	height: 150px;
+	margin-top: 25px;
+	margin-left: 10%;
+	cursor: pointer;
+
+}
+
+#imgSize:hover {
+
+	width: 90%;
+	height: 190px;
+	margin-top: 5px;
+	margin-left: 5%;
+
+}
+
+/* La acción de estos ID es para cambiar el color de los iconos que usamos en la seccion PUBLICIDAD debajo de "Encuntranos en las redes sociales" */
+#socialNet{
+	color: #FFCC38;
+}
+
+#socialNet:hover{
+	color: #D3AA35;
+}
+
+#imgCarousel {
+	width: 100%;
+	height: 500px;
+}

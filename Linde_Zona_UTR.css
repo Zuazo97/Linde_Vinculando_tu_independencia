@@ -1,0 +1,38 @@
+
+/* La acción de este ID es para cuando estes sobre el boton del menu cambie de color de fondo */
+#nav:hover{
+	background-color: #5D6D7E;
+}
+
+/* La acción de este ID es para cuando estes sobre el boton del menu cambie de color de la letra */
+#navLetter{
+	color: #FE9B02;
+}
+#navLetter:hover{
+	color: white;
+}
+
+/* La acción de estos ID es para cambiar el color de los iconos que usamos en la seccion PUBLICIDAD debajo de "Encuntranos en las redes sociales" */
+#socialNet{
+	color: #FFCC38;
+}
+
+#socialNet:hover{
+	color: #D3AA35;
+}
+
+th {
+	background-color: #FE9B02;
+	font-family: 'Anton', sans-serif;
+	font-size: 25px;
+}
+
+tr {
+	background-color: #FFCC38;
+	font-family: 'Oswald', sans-serif;
+	font-size: 20px;
+}
+
+tr:hover{
+	background-color: #D3AA35;
+}

@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Linde - Vinculando tu independencia</title><!-- -->
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="icon" type="image/gif" sizes="16x16" href="Images/icono.png">
+	<!-- Responsive code -->
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<!-- Apis to use Bootstrap -->
+ 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  	<!-- Font awesome -->
+  	<link rel="stylesheet"  href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  	<link href="https://fonts.googleapis.com/css?family=Anton|Oswald" rel="stylesheet">
+</head>
+<body>
+	<!-- Top nav code -->
+	<nav class="navbar navbar-inverse navbar-fixed-top" style="font-family: 'Anton', sans-serif; font-size: 20px;">
+		<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+       			<span class="icon-bar"></span>
+        		<span class="icon-bar"></span>
+        		<span class="icon-bar"></span>                        
+      		</button>
+			<a class="navbar-brand" style="color: #FE9B02;" href="index.html">LINDE</a>
+		</div>
+		<div class="collapse navbar-collapse" id="myNavbar">
+		<ul class="nav navbar-nav">
+			<li id="nav"><a id="navLetter" href="#students">Estudiates</a></li>
+			<li id="nav"><a id="navLetter" href="#padres">Padres</a></li>
+			<li id="nav"><a id="navLetter" href="#arrendadores">Arrendadores</a></li>
+			<li id="nav"><a id="navLetter" href="#instituciones">Instituciones</a></li>
+			<li id="nav"><a id="navLetter" href="#nosotros">Sobre nosotros</a></li>
+			<li id="nav"><a id="navLetter" href="Linde_Buscar_Casas.html">Buascar casa</a></li>
+		</ul>
+		<ul class="nav navbar-nav navbar-right">
+			<li id="nav" data-target="#signup"><a data-toggle="modal" id="navLetter" href="#myModal"><i class="fa fa-user-o"></i> Iniciar Sesión</a>
+			<li id="nav" data-target="#signup"><a data-toggle="modal" id="navLetter" href="#registro"><i class="fa fa-user-plus"></i> Registrarse</a>
+			</li>	
+		</ul>
+		</div>
+	    </div>
+	</nav>
+	<!-- Iniciar Sesión -->
+    <div class="modal fade" id="myModal" role="dialog">
+    	<div class="modal-dialog">
+    
+      	<!-- Contenido-->
+      	<div class="modal-content" style="background-color: #FE9B02; font-family: 'Anton', sans-serif;">
+        	<div class="modal-header">
+          		<button type="button" class="close" data-dismiss="modal">&times;</button>
+          		<h4 class="modal-title">Iniciar Sesión</h4>
+        	</div>
+        	<div class="modal-body">
+        		<center>
+          		<form>
+          			<input type="email" name="email" placeholder="Correo Institucional (xxxx@utr.edu.mx)." required="" style="width: 90%; height: 40px; margin-bottom: 10px; text-align: center;">
+          			<input type="password" name="password" placeholder="Contraseña" required="" style="width: 90%; height: 40px; margin-bottom: 10px; text-align: center;">
+          			<input type="submit" name="submit" value="Iniciar Sesión" style="width: 30%; height: 30px; margin-bottom: 10px;">
+          		</form>
+          		</center>
+        	</div>
+       		<div class="modal-footer">
+          		<button type="button" class="btn btn-default" data-dismiss="modal">Volver</button>
+        	</div>
+        </div>
+      
+        </div>
+    </div>
+
+    <!-- Registrarse -->
+    <div class="modal fade" id="registro" role="dialog">
+    	<div class="modal-dialog">
+    
+      	<!-- Contenido-->
+      	<div class="modal-content" style="background-color: #FE9B02; font-family: 'Anton', sans-serif;">
+        	<div class="modal-header">
+          		<button type="button" class="close" data-dismiss="modal">&times;</button>
+          		<h4 class="modal-title">Registro</h4>
+        	</div>
+        	<div class="modal-body">
+        		<center>
+          		<form>
+          			<input type="text" name="name" placeholder="Nombre" required="" style="width: 90%; height: 40px; margin-bottom: 10px; text-align: center;">
+          			<h4>Selecciona a la universidad que perteneces:</h4>
+          			<select style="width: 90%; height: 40px; margin-bottom: 10px; text-align: center;" required="">
+          				<option>Universidad Tecnológica El Retoño</option>
+          				<option>Universidad Tecnológica de Aguascalientes</option>
+          				<option>Universidad Tecnológica de Calvillo</option>
+          				<option>Universidad Politécnia de Aguascalientes</option>
+          			</select>
+          			<input type="email" name="email" placeholder="Correo Institucional (xxxx@utr.edu.mx)." required="" style="width: 90%; height: 40px; margin-bottom: 10px; text-align: center;">
+          			<input type="password" name="password" placeholder="Contraseña" required="" style="width: 90%; height: 40px; margin-bottom: 10px; text-align: center;">
+          			<p>Al hacer clic en "Registrarse", aceptas las <a href="Linde_Politicas.html" target="_blank">Condiciones</a> y confirmas que leíste nuestra <a href="Linde_Politicas.html" target="_blank">Política de datos</a>, incluido el uso de cookies.</p>
+          			<input type="submit" name="submit" value="Registrarse" style="width: 30%; height: 30px; margin-bottom: 10px;">
+          		</form>
+          		</center>
+        	</div>
+       		<div class="modal-footer">
+          		<button type="button" class="btn btn-default" data-dismiss="modal">Volver</button>
+        	</div>
+        </div>
+      
+        </div>
+    </div>
+
+    <!-- Logo de LINDE -->
+	<div class="container" style="margin-top: 100px;" id="logo">
+		<img class="img-responsive" src="Images/logo.png" style="width: 70%; height: 800px; margin-left: 15%;">
+	</div>
+
+	<div class="container-fluid" id="students">
+		<div class="page-header" style="font-family: 'Anton', sans-serif;">
+			<h1 style="font-size: 70px;"><strong>Estudiantes</strong></h1>
+			<h1 style="font-size: 70px;"><small> Independencia - Crecimiento - Fraternidad </small></h1>
+		</div>
+	</div>
+
+	<!-- Sección de Estudiantes -->
+	<div class="container" style="font-size: 22px; background-color: #FFCC38; border-radius: 20px; padding: 10px; font-family: 'Oswald', sans-serif;">
+		<div class="col-sm-12" style="margin-bottom: 10px;">
+			<p>
+				Linde te pone en tus manos el lugar al que llamarás HOGAR, donde te sentirás plenamente independiente, siendo responsable de TU espacio de habitación. Siendo un lugar donde pasarás la mayor parte de tu tiempo hasta concluir tus estudios universitarios. ¡Recuerda! Comodidad, seguridad e independencia, <strong>SOLO EN LINDE</strong>.
+			</p>
+		</div>
+		<div class="col-sm-6">
+			<p>
+				Además, te ofrecemos experiencias increíbles dentro de la ciudad, conciertos, paseos por el centro de la ciudad, museos, galerías de arte, exposiciones. También te sugerimos lugares para que conozcas los alrededores de la ciudad y conozcas pueblos mágicos. 
+			</p>
+		</div>
+		<div class="col-sm-6">
+			<p>
+				Por supuesto, sabemos que como estudiante que da todo por tener un excelente rendimiento en la universidad es una tarea ardua también debe de haber momentos de esparcimiento, así que te ofrecemos los mejores lugares para divertirte el fin de semana con tu familia, amigos y compañeros de clase.
+			</p>
+		</div>
+	</div>
+
+	<!-- Sección de Padres -->
+	<div class="container-fluid" style="margin-top: 100px; font-family: 'Anton', sans-serif;" id="padres">
+		<div class="page-header">
+			<h1 style="font-size: 70px;"><strong>Padres</strong></h1>
+			<h1 style="font-size: 70px;"><small> Seguridad - Responsabilidad - Economico </small></h1>
+		</div>
+	</div>
+
+	<div class="container" style="font-size: 22px; background-color: #FFCC38; border-radius: 20px; padding: 10px; font-family: 'Oswald', sans-serif;">
+		<div class="col-sm-12" style="margin-bottom: 10px;">
+			<p>
+				Sabemos que dejar a los hijos fuera de casa es un gran reto para usted como padres, sin embargo, los deja en buenas manos confiando en Linde.
+			</p>
+			<p>
+				Linde te permite seguir cuidando de tu hijo(a) aún estando a distancia. Tenemos convenios las instituciones educativas en las que estudia su hijo(a), esto nos permite enviar reportes sobre el rendimiento de su hijo(a) en la universidad y no solo allí, sino también dentro del hogar en el que se encuentra.
+			</p>
+		</div>
+		<div class="col-sm-6">
+			<p>
+				Contando con el respaldo de las instituciones educativas encargadas de enviarnos la información de las mejores opciones de alojamiento dentro de la zona universitaria, permitiendo darle a usted la tranquilidad de que sus hijos están en una zona segura y lo que es mejor cerca de la universidad de destino. 
+			</p>
+		</div>
+		<div class="col-sm-6">
+			<p>
+				Linde también se preocupa por tu bolsillo, estamos consientes que como padre de familia quiere lo mejor para su hijo y apoyamos esta idea, ya que ofrecemos paquetes de alojamiento accesibles para usted garantizando seguridad y comodidad para su hijo(a).
+			</p>
+			<p>
+				¡Recuerda! <strong>Linde es tu aliado</strong> y nos preocupamos por apoyar al buen desarrollo y crecimiento de tu hijo(a).
+			</p>
+		</div>
+	</div>
+
+	<!-- Sección de Arrendadores -->
+	<div class="container-fluid" style="margin-top: 100px; font-family: 'Anton', sans-serif;" id="arrendadores">
+		<div class="page-header">
+			<h1 style="font-size: 70px;"><strong>Arrendadores</strong></h1>
+			<h1 style="font-size: 70px;"><small> Seguridad - Beneficios - Confianza </small></h1>
+		</div>
+	</div>
+
+	<div class="container" style="font-size: 22px; background-color: #FFCC38; border-radius: 20px; padding: 10px; font-family: 'Oswald', sans-serif;">
+		<div class="col-sm-12" style="margin-bottom: 10px;">
+			<p>
+				Linde es el mejor vínculo para el alquiler de tu casa, cuarto o departamento. En Linde garantizamos la seguridad de que tu espacio es ocupado por estudiantes responsables, dado que contamos con el respaldo de las instituciones educativas. ¡Recuerda! Confianza, eficacia y garantía, <strong>SOLO EN LINDE</strong>.
+			</p>
+		</div>
+		<div class="col-sm-6">
+			<p>
+				¡Linde premia tu confianza! Por confiar en nosotros y apoyar a los jóvenes en su etapa de estudio te premiamos. Al registrar tu casa participas en los premios de cada mes, premios como bonificaciones monetarias, viajes, promociones en restaurantes o bares, entre muchas cosas más. ¡Recuerda! El único en premiar tu confianza, <strong>SOLO LINDE</strong>. 
+			</p>
+		</div>
+		<div class="col-sm-6">
+			<h2>
+				¡LINDE ES TU MEJOR OPCIÓN PARA OFRECER TU CASA!
+			</h2>
+		</div>
+	</div>
+
+	<!-- Sección de Instituciones -->
+	<div class="container-fluid" style="margin-top: 100px; font-family: 'Anton', sans-serif;" id="instituciones">
+		<div class="page-header">
+			<h1 style="font-size: 70px;"><strong>Instituciones Educativas</strong></h1>
+			<h1 style="font-size: 70px;"><small> Publicidad - Prestigio - Confianza </small></h1>
+		</div>
+	</div>
+
+	<div class="container" style="font-size: 22px; background-color: #FFCC38; border-radius: 20px; padding: 10px; font-family: 'Oswald', sans-serif;">
+		<div class="col-sm-12" style="margin-bottom: 10px;">
+			<p>
+				Universidad, mi segundo hogar. En Linde sabemos que las intituciones educativas son clave principal para el crecimiento intelectual de los estudiantes, Linde busca un vinculo entre universidad-página el cual se respalde a travez de la matricula estudiantil y dando como beneficio las universidades el prestigio de apoyar a los alumnos a encontrar un lugar seguro y controlado para un mejor desempeño academico.
+			</p>
+		</div>
+	</div>
+
+	<!-- Sección de Aliados -->
+	<div class="jumbotron" style="height: 700px; margin-top: 100px; background-color: #FE9B02; font-family: 'Anton', sans-serif;">
+		<center><h1 style="font-size: 70px;">Aliados</h1></center>
+		<div class="col-md-12">
+			<div class="iconOne">
+
+				<a href="#"><img src="Images/utr.png" id="imgSize"></a>
+						
+			</div>
+			<div class="iconOne">
+
+				<a href="#"><img src="Images/uta.png" id="imgSize"></a>
+						
+			</div>
+			<div class="iconOne">
+
+				<a href="#"><img src="Images/utc.png" id="imgSize"></a>
+						
+			</div>
+			<div class="iconOne">
+
+				<a href="#"><img src="Images/utna.png" id="imgSize"></a>
+						
+			</div>
+		</div>
+		<div class="col-md-12">
+			<div class="iconOne">
+
+				<a href="#"><img src="Images/barezzito.png" id="imgSize"></a>
+						
+			</div>
+			<div class="iconOne">
+
+				<a href="#"><img src="Images/little.png" id="imgSize"></a>
+						
+			</div>
+			<div class="iconOne">
+
+				<a href="#"><img src="Images/mrsushi.png" id="imgSize"></a>
+						
+			</div>
+			<div class="iconOne">
+
+				<a href="#"><img src="Images/turismo.png" id="imgSize"></a>
+						
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid" style="margin-top: 100px; font-family: 'Anton', sans-serif;" id="nosotros">
+		<div class="page-header">
+			<h1 style="font-size: 70px;"><strong>Sobre nosotros</strong></h1>
+			<h1 style="font-size: 70px;"><small> Confianza - Responsabilidad - Seguridad </small></h1>
+		</div>
+	</div>
+	<div class="container-fluid" style="font-size: 22px; background-color: #FFCC38; border-top-right-radius: 20px; border-top-left-radius: 20px; padding: 10px; font-family: 'Oswald', sans-serif;">
+		<div class="col-sm-6" style="margin-bottom: 10px;">
+			<h2>Misión</h2>
+			<p>
+				Somos una empresa dedicada a brindar un enlace para los estudiantes del sector universitario, en especial para estudiantes foráneos, para que puedan encontrar una casa dentro de la zona universitaria de destino ofreciendo seguridad y comodidad física y económica. Apoyando a su crecimiento durante su etapa estudiantil.
+			</p>
+		</div>
+		<div class="col-sm-6" style="margin-bottom: 10px;">
+			<h2>Visión</h2>
+			<p>
+				Para el 2020 ser una empresa consolidada, que destaque por ser un apoyo al sector estudiantil universitario siendo lo primero que se venga a la mente de los estudiantes en cuestión de alojamiento.
+			</p>
+		</div>
+	</div>
+
+	<div class="container-fluid" style="margin-top: 10px; font-family: 'Anton', sans-serif;">
+		<div class="col-sm-6">
+			<div class="media">
+				<div class="media-left">
+					<img src="Images/vidal.jpg" class="media-object" style="width: 300px; height: 300px;">
+				</div>
+				<div class="media-body" style="padding: 30px;">
+					<h2>Vidal Zuazo</h2>
+					<h2>Ing. Tecnológias de la Información y Comunicación</h2>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-6">
+			<div class="media">
+				<div class="media-left">
+					<img src="Images/yulet.jpg" class="media-object" style="width: 300px; height: 300px;">
+				</div>
+				<div class="media-body" style="padding: 30px;">
+					<h2>Yulet Escobedo</h2>
+					<h2>Ing. Administración área Recursos Humanos</h2>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-6" style="margin-top: 10px;">
+			<div class="media">
+				<div class="media-left">
+					<img src="Images/cesar.jpg" class="media-object" style="width: 300px; height: 300px;">
+				</div>
+				<div class="media-body" style="padding: 30px;">
+					<h2>Cesar Guerrero</h2>
+					<h2>Ing. Mecatronica área de Automatización</h2>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-6" style="margin-top: 10px;">
+			<div class="media">
+				<div class="media-left">
+					<img src="Images/diana.jpg" class="media-object" style="width: 300px; height: 300px;">
+				</div>
+				<div class="media-body" style="padding: 30px;">
+					<h2>Diana Nieves</h2>
+					<h2>Ing. Desarrollo de Negocios área de Mercadotecnia</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid" style="margin-top: 10px; font-family: 'Anton', sans-serif;">
+		<h1 style="font-size: 70px;">FOTOS</h1>
+			<div id="myCarousel" class="carousel slide" data-ride="carousel" style="font-family: 'Work Sans', sans-serif;
+	font-size: 15px; width: 80%; margin-left: 10%; height: 500px;">
+				<div class="carousel-inner">
+			    	<div class="item active">
+				    	<img src="Images/cuatro.jpg" id="imgCarousel">
+				    	<div class="carousel-caption" style="">
+				        	<h3>CONIES 2017</h3>
+				        	<p>Finalistas en la competencia anual CONIES 2017.</p>
+			        	</div>
+			    	</div>
+			    	<div class="item">
+				    	<img src="Images/uno.jpg" id="imgCarousel">
+				    	<div class="carousel-caption">
+					    	<h3>Nota en el periódico El Sol de Aguascalientes</h3>
+				    	</div>
+			    	</div>
+			    	<div class="item">
+				    	<img src="Images/dos.jpg" id="imgCarousel">
+				    	<div class="carousel-caption">
+					    	<h3>Creado como proyecto estudiantil</h3>
+					    	<p>Nuestro deseo era ayudar a nuestros compañeros foraneos a encontrar un lugar seguro, comodo y cerca de la universidad.</p>
+				    	</div>
+			    	</div>
+			    	<div class="item">
+				    	<img src="Images/tres.jpg" id="imgCarousel">
+				    	<div class="carousel-caption">
+					    	<h3>Creado como proyecto estudiantil</h3>
+					    	<p>Nuestro deseo era ayudar a nuestros compañeros foraneos a encontrar un lugar seguro, comodo y cerca de la universidad.</p>
+				    	</div>
+			    	</div>
+				</div>
+
+				<a href="#myCarousel" class="left carousel-control" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left"></span>
+					<span class="sr-only">Previuos</span>
+				</a>
+				<a href="#myCarousel" class="right carousel-control" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right"></span>
+					<span class="sr-only">Next</span>
+				</a>
+	    	</div>
+		</div>
+
+	<!-- Sección de Publicidad -->
+	<div class="container-fluid" style="margin-top: 100px; font-family: 'Anton', sans-serif; font-size: 22px; text-align: center; background-color: #222; padding: 10px; color: #FE9B02;">
+		<div class="col-sm-4">
+			<address>
+				 Linde, Inc.<br> Bella Vista 122, Atardecer 101<br> Aguascalientes, Ags 20288<br> <abbr title="Telefono">T:</abbr> (449) 142-0902
+			</address>
+		</div>
+		<div class="col-sm-4">
+			<h3>Encuntranos en las redes sociales</h3>
+			<center>
+			<ul class="list-inline">
+                <li class="list-inline-item">
+                  <a class="btn-social btn-outline" href="#">
+                    <i class="fa fa-fw fa-facebook fa-3x" id="socialNet"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-social btn-outline" href="#">
+                    <i class="fa fa-fw fa-twitter fa-3x" id="socialNet"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-social btn-outline" href="#">
+                    <i class="fa fa-fw fa-instagram fa-3x" id="socialNet"></i>
+                  </a>
+                </li>
+             </ul>
+             </center>
+		</div>
+		<div class="col-sm-4">
+			<blockquote class="blockquote-reverse" style="font-size: 25px; margin-top: 25px;">
+				<p>"Vinculando tu independencia"</p>
+				<footer>Diana Nieves Co-Fundadora LINDE</footer>
+			</blockquote>
+		</div>
+	</div>
+
+</body>
+</html>
+
+<!-- Developed by Vidal Zuazo Ortiz -->
